@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Non-Agent Request Form</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<div id="app">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<h5>ID Number:</h5>
+				</div>
+				<div class="col-lg-6 text-center">
+					<h2>Non-Agent Request Form</h2>
+				</div>
+				<div class="col-lg-3">
+					<h5>Status:</h5>
+				</div>
+			</div>
+			<hr>
+			<form role="form">
+			  	
+				<div class="row">
+			  		<div class="col-xs-3">
+				  		<div class="form-group">
+				    		<label for="department">Departament:</label>
+							<div class="">
+								<select class="form-control">
+								  <option :value="null" disabled>Select</option>
+								  <option :value="null" disabled>Select</option>
+								</select>				    							
+							</div>
+				  		</div>				    
+			  		</div>
+				  	<div class="col-xs-4">
+				    	<div class="form-group">
+				    		<label for="location">Location:</label>
+							<div class="">
+								<select class="form-control">
+								  <option :value="null" disabled>Select</option>
+								  <option :value="null" disabled>Select</option>
+								</select>				    							
+							</div>
+				  		</div>
+				  	</div>
+				  	<div class="col-xs-5">
+				    	<div class="form-group">
+				    		<label for="jobtitle">Job Title:</label>
+							<div class="">
+								<select class="form-control">
+								  <option :value="null" disabled>Select</option>
+								  <option :value="null" disabled>Select</option>
+								</select>				    							
+							</div>
+						</div>
+				  	</div>
+				</div>	
+
+				<div class="row">
+			  		<div class="col-xs-3">
+				  		<div class="form-group">
+				    		<label for="position">Position:</label>
+                                <select class="form-control" name="" id=""  >
+                                    <option :value="null" disabled>Select</option>
+                                    <option value="1">Full Time</option>
+                                    <option value="2">Part Time</option>
+                                </select>				    		
+				  		</div>				    
+			  		</div>
+				  	<div class="col-xs-4">
+				    	<div class="form-group">
+				    		<label for="">Position Type:</label>
+                                <select class="form-control" name="" id=""  >
+                                    <option :value="null" disabled>Select</option>
+                                    <option value="1">Permanent</option>
+                                    <option value="2">Temporary</option>
+                                </select>
+				  		</div>
+				  	</div>
+				  	<div class="col-xs-5">
+				    	<div class="form-group">
+				    		<label for="">Replacement/New/Head Count Increase:</label>
+                                <select class="form-control" name="" id=""  >
+                                    <option :value="null" disabled>Select</option>
+                                    <option value="1">Replacement</option>
+                                    <option value="2">New</option>                                   
+                                    <option value="3">Head Count Increase</option>
+                                </select>				    		
+				    	</div>
+				  	</div>
+				</div>		
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label for="">New Position Justification:</label>
+				    		<textarea class="form-control" rows="2" id="Justification"></textarea>
+						</div>
+					</div>
+				</div>	 
+				<div class="row">
+					<div class="col-md-5">
+						<div class="form-group">
+							<label for="">Current Ratio vs Agent:</label>
+				    		<input type="text" class="form-control" id="" placeholder="(for operations only)">
+						</div>
+					</div>
+
+					<div class="col-md-5 col-md-offset-2">
+						<div class="form-group">
+							<label for="">Contract Ratio vs Agent:</label>
+				    		<input type="text" class="form-control" id="" placeholder="(for operations only)">
+						</div>
+					</div>
+				</div>	 				 	
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label for="">Name of Person being Replaced:</label>
+				    		<input type="text" class="form-control" id="" placeholder="e.g., John Doe">
+						</div>
+					</div>
+				</div>	 
+				<div class="row">
+					<div class="col-md-7">
+						<div class="form-group">
+							<label for="">Why did they leave:</label>
+				    		<input type="text" class="form-control" id="" placeholder="only if Replacement">
+						</div>
+					</div>
+
+					<div class="col-md-5 ">
+						<div class="form-group">
+							<label for="">Date they left:</label>
+				    		<input type="date" class="form-control" id="">
+						</div>
+					</div>
+				</div>		
+				<div class="row">
+					<div class="col-md-3">
+						<div class="form-group">
+							<label for="">Salary (USD):</label>
+				    		<input type="text" class="form-control" id="" placeholder="Entered by PM but local HR to verify. See flow for USA Employees">
+						</div>
+					</div>
+
+					<div class="col-md-3 ">
+						<div class="form-group">
+							<label for="">Proposed Start Date:</label>
+				    		<input type="date" class="form-control" id="" >
+						</div>
+					</div>
+					<div class="col-md-5 col-md-offset-1 ">
+						<div class="form-group">
+							<label for="">Supervisor:</label>
+				    		<input type="text" class="form-control" id="" placeholder="e.g., John Doe">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label for="">Description of Job Duties:</label>
+				    		<textarea class="form-control" rows="2" id="duties"></textarea>
+						</div>
+					</div>
+				</div>														
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label for="">Additional Information:</label>
+				    		<textarea class="form-control" rows="2" id="additional"></textarea>
+						</div>
+					</div>
+				</div>	
+				<div class="row">
+					<div class="col-md-2">
+						<div class="form-group">
+							<!-- Indicates a successful or positive action -->
+							<button type="button" class="btn btn-success">Approve</button>
+						</div>
+					</div>
+
+					<div class="col-md-2 ">
+						<div class="form-group">
+							<!-- Indicates a dangerous or potentially negative action -->
+							<button type="button" class="btn btn-danger">Deny</button>							
+						</div>
+					</div>
+					<div class="col-md-8 ">
+						<div class="form-group">
+							<label for="">Comment:</label>
+				    		<textarea class="form-control" rows="2" id="comment"></textarea>
+						</div>
+					</div>
+				</div>							
+			</form>
+		</div>
+	</div>
+
+    <script src="js/vue.js"></script>   
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+	<script>
+
+
+		var appData = {
+
+			departments: [];
+
+
+		}
+
+		var app = new Vue({
+	    	el: '#app',
+	      	data: appData,
+
+	    })
+	</script>    
+  </body>
+</html>
